@@ -53,6 +53,7 @@ struct ReSwiftPerfPlay: View {
 
 func reswiftReducer(action: Action,
                     state: ReSwiftState?) -> ReSwiftState {
+//    print("reswiftReducer")
     var totalState = state ?? ReSwiftState()
 
     if action is CounterIncremented {
