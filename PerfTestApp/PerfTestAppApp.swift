@@ -11,7 +11,7 @@ import SwiftUI
 struct PerfTestAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           ReSwiftPerfPlay()
         }
     }
 }

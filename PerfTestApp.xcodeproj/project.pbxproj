@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC9E9A4A292EE03400766FFB /* ReSwiftPerfPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E9A49292EE03400766FFB /* ReSwiftPerfPlay.swift */; };
+		EC9E9A4D292EE0AA00766FFB /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EC9E9A4C292EE0AA00766FFB /* ReSwift */; };
 		ECD5CFDF292829A600577C73 /* PerfTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5CFDE292829A600577C73 /* PerfTestAppApp.swift */; };
-		ECD5CFE1292829A600577C73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5CFE0292829A600577C73 /* ContentView.swift */; };
 		ECD5CFE3292829A700577C73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD5CFE2292829A700577C73 /* Assets.xcassets */; };
 		ECD5CFE6292829A700577C73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD5CFE5292829A700577C73 /* Preview Assets.xcassets */; };
 		ECD5CFF0292829A800577C73 /* PerfTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5CFEF292829A800577C73 /* PerfTestAppTests.swift */; };
 		ECD5CFFA292829A800577C73 /* PerfTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5CFF9292829A800577C73 /* PerfTestAppUITests.swift */; };
 		ECD5CFFC292829A800577C73 /* PerfTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5CFFB292829A800577C73 /* PerfTestAppUITestsLaunchTests.swift */; };
+		ECD5D00A292829DD00577C73 /* DisplayLink in Frameworks */ = {isa = PBXBuildFile; productRef = ECD5D009292829DD00577C73 /* DisplayLink */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC9E9A49292EE03400766FFB /* ReSwiftPerfPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReSwiftPerfPlay.swift; sourceTree = "<group>"; };
 		ECD5CFDB292829A600577C73 /* PerfTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD5CFDE292829A600577C73 /* PerfTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfTestAppApp.swift; sourceTree = "<group>"; };
-		ECD5CFE0292829A600577C73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECD5CFE2292829A700577C73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECD5CFE5292829A700577C73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ECD5CFEB292829A800577C73 /* PerfTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerfTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD5D00A292829DD00577C73 /* DisplayLink in Frameworks */,
+				EC9E9A4D292EE0AA00766FFB /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				ECD5CFDE292829A600577C73 /* PerfTestAppApp.swift */,
-				ECD5CFE0292829A600577C73 /* ContentView.swift */,
+				EC9E9A49292EE03400766FFB /* ReSwiftPerfPlay.swift */,
 				ECD5CFE2292829A700577C73 /* Assets.xcassets */,
 				ECD5CFE4292829A700577C73 /* Preview Content */,
 			);
@@ -143,6 +147,10 @@
 			dependencies = (
 			);
 			name = PerfTestApp;
+			packageProductDependencies = (
+				ECD5D009292829DD00577C73 /* DisplayLink */,
+				EC9E9A4C292EE0AA00766FFB /* ReSwift */,
+			);
 			productName = PerfTestApp;
 			productReference = ECD5CFDB292829A600577C73 /* PerfTestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,10 @@
 				Base,
 			);
 			mainGroup = ECD5CFD2292829A600577C73;
+			packageReferences = (
+				ECD5D008292829DD00577C73 /* XCRemoteSwiftPackageReference "DisplayLink" */,
+				EC9E9A4B292EE0A900766FFB /* XCRemoteSwiftPackageReference "ReSwift" */,
+			);
 			productRefGroup = ECD5CFDC292829A600577C73 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD5CFE1292829A600577C73 /* ContentView.swift in Sources */,
 				ECD5CFDF292829A600577C73 /* PerfTestAppApp.swift in Sources */,
+				EC9E9A4A292EE03400766FFB /* ReSwiftPerfPlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +595,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC9E9A4B292EE0A900766FFB /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+		ECD5D008292829DD00577C73 /* XCRemoteSwiftPackageReference "DisplayLink" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/timdonnelly/DisplayLink.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC9E9A4C292EE0AA00766FFB /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9E9A4B292EE0A900766FFB /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+		ECD5D009292829DD00577C73 /* DisplayLink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECD5D008292829DD00577C73 /* XCRemoteSwiftPackageReference "DisplayLink" */;
+			productName = DisplayLink;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECD5CFD3292829A600577C73 /* Project object */;
 }

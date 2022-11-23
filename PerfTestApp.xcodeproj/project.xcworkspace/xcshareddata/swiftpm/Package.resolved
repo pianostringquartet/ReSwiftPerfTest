@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "displaylink",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/timdonnelly/DisplayLink.git",
+      "state" : {
+        "revision" : "e95f592a176246172324f10eb1bdc92f121d479f",
+        "version" : "0.2.0"
+      }
+    },
+    {
+      "identity" : "reswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReSwift/ReSwift.git",
+      "state" : {
+        "revision" : "b92762b5aa85c5e94053d942fbd37124ee939e5b",
+        "version" : "5.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
